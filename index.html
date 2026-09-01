@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BandungWheels - Sewa Mobil Bandung Terpercaya & Profesional</title>
+  <meta name="description" content="BandungWheels - Layanan sewa mobil terbaik di Bandung. Armada lengkap, driver berpengalaman, harga transparan.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__container">
+      <a href="#beranda" class="navbar__logo">
+        <span class="material-symbols-outlined navbar__logo-icon">directions_car</span>
+        <span class="navbar__logo-text">BandungWheels</span>
+      </a>
+
+      <nav class="navbar__nav" id="navbarNav">
+        <a href="#beranda" class="navbar__link navbar__link--active" data-nav>Beranda</a>
+        <a href="#tentang" class="navbar__link" data-nav>Tentang Kami</a>
+        <div class="navbar__dropdown" data-dropdown>
+          <button class="navbar__link navbar__dropdown-toggle" data-dropdown-toggle aria-expanded="false">
+            Layanan <span class="material-symbols-outlined navbar__chevron">expand_more</span>
+          </button>
+          <div class="navbar__dropdown-menu">
+            <a href="#layanan" class="navbar__dropdown-item">Pilihan Perjalanan</a>
+            <a href="#harga" class="navbar__dropdown-item">Paket Wisata</a>
+            <a href="#kontak" class="navbar__dropdown-item">Layanan Lainnya</a>
+          </div>
+        </div>
+        <div class="navbar__dropdown" data-dropdown>
+          <button class="navbar__link navbar__dropdown-toggle" data-dropdown-toggle aria-expanded="false">
+            Armada <span class="material-symbols-outlined navbar__chevron">expand_more</span>
+          </button>
+          <div class="navbar__dropdown-menu">
+            <a href="#armada" class="navbar__dropdown-item">Toyota Avanza</a>
+            <a href="#armada" class="navbar__dropdown-item">Toyota Innova Zenix</a>
+            <a href="#armada" class="navbar__dropdown-item">Toyota Hiace</a>
+            <a href="#armada" class="navbar__dropdown-item">Toyota Alphard</a>
+          </div>
+        </div>
+        <a href="#kontak" class="navbar__link" data-nav>Kontak</a>
+      </nav>
+
+      <a href="https://wa.me/6281122334455?text=Halo%20BandungWheels%2C%20saya%20ingin%20menyewa%20mobil." class="navbar__cta" target="_blank" rel="noopener">
+        Pesan Sekarang
+      </a>
+
+      <button class="navbar__hamburger" id="hamburgerBtn" aria-label="Buka menu navigasi" aria-expanded="false">
+        <span class="material-symbols-outlined navbar__hamburger-icon">menu</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="beranda">
+      <div class="hero__bg">
+        <div class="hero__bg-image" data-hero-bg></div>
+        <div class="hero__bg-overlay"></div>
+      </div>
+      <div class="hero__content">
+        <div class="hero__text">
+          <span class="hero__eyebrow">BANDUNGWHEELS / PREMIUM CAR RENTAL</span>
+          <h1 class="hero__title">
+            Perjalanan Nyaman,<br>Dimulai Dari Sini.
+          </h1>
+          <p class="hero__subtitle">
+            Sewa mobil dengan armada terawat dan layanan profesional untuk perjalanan bisnis, wisata, maupun kebutuhan perjalanan Anda di Bandung dan sekitarnya.
+          </p>
+          <div class="hero__actions">
+            <a href="https://wa.me/6281122334455?text=Halo%20BandungWheels%2C%20saya%20ingin%20menyewa%20mobil." class="btn btn--secondary btn--lg" target="_blank" rel="noopener">
+              Pesan Sekarang
+            </a>
+            <a href="#armada" class="btn btn--glass btn--lg">
+              Lihat Armada
+            </a>
+          </div>
+          <div class="hero__trust">
+            <div class="hero__trust-item">
+              <span class="material-symbols-outlined hero__trust-icon">check_circle</span>
+              <span>Armada Terawat</span>
+            </div>
+            <div class="hero__trust-item">
+              <span class="material-symbols-outlined hero__trust-icon">check_circle</span>
+              <span>Driver Profesional</span>
+            </div>
+            <div class="hero__trust-item">
+              <span class="material-symbols-outlined hero__trust-icon">check_circle</span>
+              <span>Layanan 24 Jam</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section section--low" id="tentang">
+      <div class="container">
+        <div class="section__header reveal reveal--fade-up">
+          <h2 class="section__title">Kenapa Harus Pilih BandungWheels?</h2>
+          <p class="section__subtitle">
+            Banyak pilihan jasa sewa mobil yang tersedia, namun tidak semuanya mengutamakan kualitas layanan. Kami hadir sebagai solusi dengan berbagai keunggulan yang bikin perjalananmu jadi lebih mudah dan nyaman.
+          </p>
+        </div>
+        <div class="features-grid">
+          <article class="feature-card reveal reveal--fade-up reveal--stagger-1">
+            <div class="feature-card__icon">
+              <span class="material-symbols-outlined">directions_car</span>
+            </div>
+            <div class="feature-card__body">
+              <h3 class="feature-card__title">Armada Lengkap, Nyaman, dan Terawat</h3>
+              <p class="feature-card__desc">Tersedia berbagai pilihan kendaraan seperti Avanza, Innova Reborn, Fortuner, Hiace, hingga Elf. Semua unit dilengkapi AC.</p>
+            </div>
+          </article>
+          <article class="feature-card reveal reveal--fade-up reveal--stagger-2">
+            <div class="feature-card__icon">
+              <span class="material-symbols-outlined">schedule</span>
+            </div>
+            <div class="feature-card__body">
+              <h3 class="feature-card__title">Jadwal Fleksibel</h3>
+              <p class="feature-card__desc">Tersedia pilihan waktu sewa yang bisa disesuaikan dengan kebutuhan Anda, mulai dari harian hingga bulanan.</p>
+            </div>
+          </article>
+          <article class="feature-card reveal reveal--fade-up reveal--stagger-3">
+            <div class="feature-card__icon">
+              <span class="material-symbols-outlined">payments</span>
+            </div>
+            <div class="feature-card__body">
+              <h3 class="feature-card__title">Tarif Transparan Tanpa Biaya Tambahan</h3>
+              <p class="feature-card__desc">Harga yang ditawarkan sudah all-in (opsional), termasuk tol, bbm, serta layanan dari driver berpengalaman.</p>
+            </div>
+          </article>
+          <article class="feature-card reveal reveal--fade-up reveal--stagger-4">
+            <div class="feature-card__icon">
+              <span class="material-symbols-outlined">location_on</span>
+            </div>
+            <div class="feature-card__body">
+              <h3 class="feature-card__title">Layanan Antar Jemput Door to Door</h3>
+              <p class="feature-card__desc">Pengemudi profesional yang sudah terbiasa dengan rute Bandung sekitarnya, memastikan perjalanan lebih aman, lancar, dan tepat waktu.</p>
+            </div>
+          </article>
+          <article class="feature-card reveal reveal--fade-up reveal--stagger-5">
+            <div class="feature-card__icon">
+              <span class="material-symbols-outlined">badge</span>
+            </div>
+            <div class="feature-card__body">
+              <h3 class="feature-card__title">Driver Berpengalaman dan Bersahabat</h3>
+              <p class="feature-card__desc">Driver profesional, ramah, dan menguasai medan jalan, cocok untuk kamu yang butuh kenyamanan ekstra.</p>
+            </div>
+          </article>
+          <article class="feature-card reveal reveal--fade-up reveal--stagger-6">
+            <div class="feature-card__icon">
+              <span class="material-symbols-outlined">support_agent</span>
+            </div>
+            <div class="feature-card__body">
+              <h3 class="feature-card__title">Layanan 24 Jam Setiap Hari</h3>
+              <p class="feature-card__desc">Kamu tidak perlu khawatir jika butuh kendaraan mendadak. Layanan customer service kami siap sedia 24 jam.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Car Fleet -->
+    <section class="section section--low section--compact-top" id="armada">
+      <div class="container">
+        <div class="section__header reveal reveal--fade-up">
+          <h2 class="section__title">Pilihan Armada Kami</h2>
+          <p class="section__subtitle">
+            Kami menyediakan berbagai pilihan armada terbaru yang selalu dalam kondisi prima untuk menunjang kenyamanan perjalanan Anda.
+          </p>
+        </div>
+        <div class="fleet-grid">
+          <!-- Car Card 1 -->
+          <article class="car-card reveal reveal--fade-up reveal--stagger-1">
+            <div class="car-card__image">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIGnb_HtOBMu1vFmBLKrFzbknJQJqzzAjrmGYVaggg1oJZ-DnR9NGAKfpc_5aw8fs-znMGk3cFqVZQzdskl7r-tDflKAg7oQ3MosGW5cPlJzh5eRDRMoApPnC-R_-mP8ECXikP2ac-luhAQtm4zZpiBpjM6gj1RkQoDSJ7chX1OnlGoKkO6vw4hUGFFSAUJDJ21Jg0h3KHydoJfQ62MXS8pVtuJjpb18nUb646Ym894GuTSTNTA71J" alt="Toyota Avanza - Sewa Mobil Bandung" loading="lazy">
+            </div>
+            <div class="car-card__body">
+              <h3 class="car-card__name">Toyota Avanza</h3>
+              <div class="car-card__specs">
+                <span class="chip">
+                  <span class="material-symbols-outlined chip__icon">group</span> 7 Kursi
+                </span>
+                <span class="chip">
+                  <span class="material-symbols-outlined chip__icon">settings</span> Manual/Auto
+                </span>
+                <span class="chip">
+                  <span class="material-symbols-outlined chip__icon">ac_unit</span> AC
+                </span>
+              </div>
+              <div class="car-card__footer">
+                <div class="car-card__price">
+                  <span class="car-card__price-label">Mulai dari</span>
+                  <span class="car-card__price-value">Rp 450.000 <span class="car-card__price-unit">/hari</span></span>
+                </div>
+                <button class="btn btn--primary btn--full" data-car="Toyota Avanza" data-whatsapp>
+                  Pesan Sekarang
+                </button>
+              </div>
+            </div>
+          </article>
+          <!-- Car Card 2 -->
+          <article class="car-card reveal reveal--fade-up reveal--stagger-2">
+            <div class="car-card__image">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqjCG9PahYcBtZuxOp1Ri-bk4KjZWZwuV-9mw0AzERGFljVeiQX4AP2s9HwEAkHSWGt1XdAKig-eZgkY3Wz-BJwauHq1g9nzvqR1UQfFghDobCd9NF3BjETyXdheJKlEpfivH-ltqbdB6Tf2bgVXqb0fXYx_BO-3yHrSeSL9aOZElWcWO1FJ9QJajZHcrQfc5gecWUzTTKtn1Lgs2mX6Vs-seKg_J6LNe2EP6_Fjhhm-E5Mu0gLbcU" alt="Toyota Innova Zenix - Sewa Mobil Bandung" loading="lazy">
+            </div>
+            <div class="car-card__body">
+              <h3 class="car-card__name">Toyota Innova Zenix</h3>
+              <div class="car-card__specs">
+                <span class="chip">
+                  <span class="material-symbols-outlined chip__icon">group</span> 7 Kursi
+                </span>
+                <span class="chip">
+                  <span class="material-symbols-outlined chip__icon">settings</span> Automatic
+                </span>
+                <span class="chip">
+                  <span class="material-symbols-outlined chip__icon">ac_unit</span> AC
+                </span>
+              </div>
+              <div class="car-card__footer">
+                <div class="car-card__price">
+                  <span class="car-card__price-label">Mulai dari</span>
+                  <span class="car-card__price-value">Rp 850.000 <span class="car-card__price-unit">/hari</span></span>
+                </div>
+                <button class="btn btn--primary btn--full" data-car="Toyota Innova Zenix" data-whatsapp>
+                  Pesan Sekarang
+                </button>
+              </div>
+            </div>
+          </article>
+          <!-- Car Card 3 -->
+          <article class="car-card reveal reveal--fade-up reveal--stagger-3">
+            <div class="car-card__image">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjSnuIOToLzZaRZUQYPjCaTL111HO4TT9uidrlIDTM_831bknGznIlnvqLsO9cicJAv267Tu3LpHzJvYmwR0xxh_BEyzBJmIR9_6rPNJIlWj9JmNuoxjmB9GWboQA5fu_38hdvYTOpnJb3EmjqaUsMU_gxrqTnuPp_tQwbXP2Pf1UjP9KqAVM012KUZglOISFASzwqyUEp4tf8KIicw_RtkKH4JETgoHI61IP2oDC9tiRxr8GdA3eY" alt="Toyota Hiace - Sewa Mobil Bandung" loading="lazy">
+            </div>
+            <div class="car-card__body">
+              <h3 class="car-card__name">Toyota Hiace</h3>
+              <div class="car-card__specs">
+                <span class="chip">
+                  <span class="material-symbols-outlined chip__icon">group</span> 14 Kursi
+                </span>
+                <span class="chip">
+                  <span class="material-symbols-outlined chip__icon">settings</span> Manual
+                </span>
+                <span class="chip">
+                  <span class="material-symbols-outlined chip__icon">ac_unit</span> AC
+                </span>
+              </div>
+              <div class="car-card__footer">
+                <div class="car-card__price">
+                  <span class="car-card__price-label">Mulai dari</span>
+                  <span class="car-card__price-value">Rp 1.200.000 <span class="car-card__price-unit">/hari</span></span>
+                </div>
+                <button class="btn btn--primary btn--full" data-car="Toyota Hiace" data-whatsapp>
+                  Pesan Sekarang
+                </button>
+              </div>
+            </div>
+          </article>
+          <!-- Car Card 4 -->
+          <article class="car-card reveal reveal--fade-up reveal--stagger-4">
+            <div class="car-card__image">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCfGhkOndRvTatOJY5yGeZ0Fg6EnoHR-eOK52M-WHbz6pxxdLgMbvG_Q8r3cfRUcyoYzdPMDYnHQ38VOLXewtKP70l-1dkeqeesdbwe1SYAofyh7Mxv3cmofcyaR3HNQ9Vtomdhx2zImNtTH0a2Ovj5-fFmz4EJd3xJIt9RSQp0q6VAcbMmqHLh1kVoZHCzE2pos7TjE0Iq6CPtC1Q-G_SqkB9pG6rN95rXfU1yGre0sIZn5kGL0zx" alt="Toyota Alphard - Sewa Mobil Bandung" loading="lazy">
+            </div>
+            <div class="car-card__body">
+              <h3 class="car-card__name">Toyota Alphard</h3>
+              <div class="car-card__specs">
+                <span class="chip">
+                  <span class="material-symbols-outlined chip__icon">group</span> 6 Kursi
+                </span>
+                <span class="chip">
+                  <span class="material-symbols-outlined chip__icon">settings</span> Automatic
+                </span>
+                <span class="chip">
+                  <span class="material-symbols-outlined chip__icon">ac_unit</span> AC
+                </span>
+              </div>
+              <div class="car-card__footer">
+                <div class="car-card__price">
+                  <span class="car-card__price-label">Mulai dari</span>
+                  <span class="car-card__price-value">Rp 2.500.000 <span class="car-card__price-unit">/hari</span></span>
+                </div>
+                <button class="btn btn--primary btn--full" data-car="Toyota Alphard" data-whatsapp>
+                  Pesan Sekarang
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+        <!-- Pilihan Perjalanan -->
+    <section class="section section--compact" id="layanan">
+      <div class="container">
+        <div class="section__header reveal reveal--fade-up">
+          <span class="section__eyebrow">LAYANAN KAMI</span>
+          <h2 class="section__title">Temukan Cara Terbaik Untuk Bepergian</h2>
+          <p class="section__subtitle">
+            Pilih layanan yang sesuai dengan kebutuhan perjalanan Anda, dari perjalanan bisnis hingga liburan bersama keluarga.
+          </p>
+        </div>
+        <div class="service-cards">
+
+          <!-- Airport Transfer -->
+          <article class="service-card reveal reveal--fade-up reveal--stagger-1" data-service="airport">
+            <div class="service-card__header">
+              <div class="service-card__icon">
+                <span class="material-symbols-outlined">flight</span>
+              </div>
+              <span class="service-card__arrow">
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </span>
+            </div>
+            <span class="service-card__category">AIRPORT TRANSFER</span>
+            <h3 class="service-card__title">Bandung ↔ Soekarno-Hatta</h3>
+            <p class="service-card__desc">Antar jemput bandara yang nyaman dan tepat waktu.</p>
+            <span class="service-card__cta">Lihat Layanan <span class="material-symbols-outlined service-card__cta-arrow">arrow_forward</span></span>
+            <div class="service-card__detail">
+              <p class="service-card__detail-desc">Antar jemput bandara Soekarno-Hatta dan Halim Perdanakusuma dengan armada yang nyaman dan driver berpengalaman.</p>
+              <ul class="service-card__detail-list">
+                <li><span class="material-symbols-outlined">check_circle</span> Armada sesuai kebutuhan perjalanan</li>
+                <li><span class="material-symbols-outlined">check_circle</span> Driver profesional</li>
+                <li><span class="material-symbols-outlined">check_circle</span> Jadwal fleksibel</li>
+              </ul>
+              <a href="#" class="btn btn--secondary btn--full service-card__wa" target="_blank" rel="noopener">
+                <span class="material-symbols-outlined">chat</span> Pesan Sekarang
+              </a>
+            </div>
+          </article>
+
+          <!-- Wisata & Liburan -->
+          <article class="service-card reveal reveal--fade-up reveal--stagger-2" data-service="wisata">
+            <div class="service-card__header">
+              <div class="service-card__icon">
+                <span class="material-symbols-outlined">landscape</span>
+              </div>
+              <span class="service-card__arrow">
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </span>
+            </div>
+            <span class="service-card__category">WISATA & LIBURAN</span>
+            <h3 class="service-card__title">Bandung • Lembang • Ciwidey</h3>
+            <p class="service-card__desc">Jelajahi destinasi favorit dengan perjalanan yang lebih nyaman.</p>
+            <span class="service-card__cta">Lihat Layanan <span class="material-symbols-outlined service-card__cta-arrow">arrow_forward</span></span>
+            <div class="service-card__detail">
+              <p class="service-card__detail-desc">Jelajahi Bandung, Lembang, Ciwidey, dan berbagai destinasi favorit dengan armada yang nyaman.</p>
+              <ul class="service-card__detail-list">
+                <li><span class="material-symbols-outlined">check_circle</span> Armada sesuai kebutuhan perjalanan</li>
+                <li><span class="material-symbols-outlined">check_circle</span> Driver profesional</li>
+                <li><span class="material-symbols-outlined">check_circle</span> Jadwal fleksibel</li>
+              </ul>
+              <a href="#" class="btn btn--secondary btn--full service-card__wa" target="_blank" rel="noopener">
+                <span class="material-symbols-outlined">chat</span> Pesan Sekarang
+              </a>
+            </div>
+          </article>
+
+          <!-- Business Trip -->
+          <article class="service-card reveal reveal--fade-up reveal--stagger-3" data-service="business">
+            <div class="service-card__header">
+              <div class="service-card__icon">
+                <span class="material-symbols-outlined">business_center</span>
+              </div>
+              <span class="service-card__arrow">
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </span>
+            </div>
+            <span class="service-card__category">BUSINESS TRIP</span>
+            <h3 class="service-card__title">Nyaman untuk perjalanan bisnis</h3>
+            <p class="service-card__desc">Armada premium dan layanan profesional untuk kebutuhan perjalanan bisnis.</p>
+            <span class="service-card__cta">Lihat Layanan <span class="material-symbols-outlined service-card__cta-arrow">arrow_forward</span></span>
+            <div class="service-card__detail">
+              <p class="service-card__detail-desc">Layanan perjalanan bisnis dengan armada premium dan driver berpengalaman untuk mendukung produktivitas Anda.</p>
+              <ul class="service-card__detail-list">
+                <li><span class="material-symbols-outlined">check_circle</span> Armada premium</li>
+                <li><span class="material-symbols-outlined">check_circle</span> Driver berpengalaman</li>
+                <li><span class="material-symbols-outlined">check_circle</span> Punctual service</li>
+              </ul>
+              <a href="#" class="btn btn--secondary btn--full service-card__wa" target="_blank" rel="noopener">
+                <span class="material-symbols-outlined">chat</span> Pesan Sekarang
+              </a>
+            </div>
+          </article>
+
+          <!-- Family Trip -->
+          <article class="service-card reveal reveal--fade-up reveal--stagger-4" data-service="family">
+            <div class="service-card__header">
+              <div class="service-card__icon">
+                <span class="material-symbols-outlined">groups</span>
+              </div>
+              <span class="service-card__arrow">
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </span>
+            </div>
+            <span class="service-card__category">FAMILY TRIP</span>
+            <h3 class="service-card__title">Lebih nyaman bersama keluarga</h3>
+            <p class="service-card__desc">Pilihan kendaraan yang nyaman untuk perjalanan bersama keluarga dan rombongan.</p>
+            <span class="service-card__cta">Lihat Layanan <span class="material-symbols-outlined service-card__cta-arrow">arrow_forward</span></span>
+            <div class="service-card__detail">
+              <p class="service-card__detail-desc">Perjalanan keluarga yang nyaman dan aman dengan pilihan kendaraan luas untuk rombongan.</p>
+              <ul class="service-card__detail-list">
+                <li><span class="material-symbols-outlined">check_circle</span> Kapasitas besar</li>
+                <li><span class="material-symbols-outlined">check_circle</span> Kenyamanan ekstra</li>
+                <li><span class="material-symbols-outlined">check_circle</span> Harga terjangkau</li>
+              </ul>
+              <a href="#" class="btn btn--secondary btn--full service-card__wa" target="_blank" rel="noopener">
+                <span class="material-symbols-outlined">chat</span> Pesan Sekarang
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Banner -->
+    <section class="pricing-banner" id="harga">
+      <div class="pricing-banner__bg"></div>
+      <div class="pricing-banner__content">
+        <div class="pricing-banner__left">
+          <span class="pricing-banner__eyebrow reveal reveal--fade-up">HARGA TRANSPARAN</span>
+          <h2 class="pricing-banner__title reveal reveal--fade-up reveal--delay-1">Sewa Mobil Bandung,<br>Tanpa Biaya Tersembunyi</h2>
+          <p class="pricing-banner__subtitle reveal reveal--fade-up reveal--delay-2">Harga jelas dan kompetitif untuk perjalanan yang nyaman dan sesuai kebutuhan Anda.</p>
+        </div>
+        <div class="pricing-banner__right reveal reveal--fade-up reveal--delay-3">
+          <span class="pricing-banner__price-label">Mulai dari</span>
+          <div class="pricing-banner__price">
+            <span class="pricing-banner__price-value">Rp 450.000</span>
+            <span class="pricing-banner__price-unit">/ hari</span>
+          </div>
+          <a href="#harga" class="btn btn--secondary pricing-banner__cta">
+            Lihat Harga <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section--low" id="testimoni">
+      <div class="container">
+        <div class="section__header reveal reveal--fade-up">
+          <h2 class="section__title">Apa Kata Mereka?</h2>
+          <p class="section__subtitle">
+            Sudah banyak pelanggan yang mempercayakan perjalanan mereka bersama kami. Berikut beberapa cerita dan pengalaman langsung dari para penumpang yang telah menggunakan layanan kami.
+          </p>
+        </div>
+        <div class="testimonials-grid">
+          <article class="testimonial-card reveal reveal--fade-up reveal--stagger-1">
+            <span class="material-symbols-outlined testimonial-card__quote">format_quote</span>
+            <p class="testimonial-card__date">1 bulan lalu</p>
+            <p class="testimonial-card__text">"Respon cepat, mobil baru, driver terampil dan ramah"</p>
+            <div class="testimonial-card__footer">
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__stars" data-rating="5"></div>
+                <span class="testimonial-card__name">Muhammad Wildan</span>
+              </div>
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbIOptZWG_PaIKccPtYj7Flf_N1hZX9-0L2MkORkTuqWz4q-CAo4dLTylQXNevQaUUy0blvBouwwX-528yPmttvtouTCp0lOPMKcPTFlIVr3bfe0EDZjWHA9_kbqlFJFLZB2w0sB6qfCETUcMGyBBdrASyai2a1JFiecYfFde6SQOB4iGIS-F8flSKHd-GFQqzZjd0S0CmSHIijRY3lugpSl96jxPC97qOsC3fniw2MbWzqlTlayuC" alt="Foto Muhammad Wildan" class="testimonial-card__avatar" loading="lazy">
+            </div>
+          </article>
+          <article class="testimonial-card reveal reveal--fade-up reveal--stagger-2">
+            <span class="material-symbols-outlined testimonial-card__quote">format_quote</span>
+            <p class="testimonial-card__date">1 bulan lalu</p>
+            <p class="testimonial-card__text">"Travel nyaman, jam sesuai dan dapat snack. Kalau dari juanda ke malang gak harus nunggu penuh langsung berangkat meskipun cuman 1 orang."</p>
+            <div class="testimonial-card__footer">
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__stars" data-rating="5"></div>
+                <span class="testimonial-card__name">Zainul Muttaqin</span>
+              </div>
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuUPmJbeC_deYlmjAPw5TIEF3Xl1WAErT4AxYhzsHPLz42ofzRdJRdcc9r_lFLP5cDKPJP93YNS97brRPJ7jsYBPLG3v-X-XJi9b_Ib99nvvy3fbNVM_NhiuUu5zK4HyU9ZQh6PV3vwaKemTSKl0ANvh6A61iXEQEhoJ3psWb1XH9OY660Hr1tN0BG--xrTwRzaKiiF2Fk25r7HFA3WS1HYBCZzy4OUKxPbUaKXtgvvGAxKJkLRbUH" alt="Foto Zainul Muttaqin" class="testimonial-card__avatar" loading="lazy">
+            </div>
+          </article>
+          <article class="testimonial-card reveal reveal--fade-up reveal--stagger-3">
+            <span class="material-symbols-outlined testimonial-card__quote">format_quote</span>
+            <p class="testimonial-card__date">1 bulan lalu</p>
+            <p class="testimonial-card__text">"pelayanan nya nyaman dan selalu di jemput tepat waktu"</p>
+            <div class="testimonial-card__footer">
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__stars" data-rating="5"></div>
+                <span class="testimonial-card__name">Angelina Ary</span>
+              </div>
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5UrKFUh_u7jPPpR3vH_tUdk3b3bD1kCvUk8pGrMakuL1hSdpmhfJ0rAiap7FJHYZxqpIuNQEBPA4CATBsln7J5E6M2UoxOjBfwqJR45xjNHuCK9DeHnUUBXtH5jATr9i--w4_Z2gEanrP5qViN3QFmaipmHYP6kCY4mwAGBYbi5AjGqAAPKGI54f_4qKmjqfgNSRgu-9RyY_zzuin5IVyz5XTo5l7F6tipH0H7kJnAGvNyIWcliYk" alt="Foto Angelina Ary" class="testimonial-card__avatar" loading="lazy">
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="faq-layout">
+          <div class="faq-sidebar reveal reveal--fade-up">
+            <h2 class="faq-sidebar__title">Frequently Asked Questions</h2>
+            <div class="faq-sidebar__card">
+              <h3 class="faq-sidebar__card-title">Masih Punya Pertanyaan?</h3>
+              <p class="faq-sidebar__card-desc">Tim kami siap membantu Anda di setiap tahap perjalanan dengan layanan yang ramah, cepat, dan terpercaya.</p>
+              <a href="https://wa.me/6281122334455?text=Halo%20BandungWheels%2C%20saya%20memiliki%20pertanyaan." class="btn btn--secondary faq-sidebar__btn" target="_blank" rel="noopener">
+                <span class="material-symbols-outlined">call</span> Hubungi Kami
+              </a>
+            </div>
+          </div>
+          <div class="faq-list reveal reveal--fade-up reveal--delay-1">
+            <div class="accordion accordion--faq" data-accordion data-accordion-group="faq" data-accordion-default="true">
+              <button class="accordion__trigger" aria-expanded="true" data-accordion-trigger>
+                <span>Bagaimana cara memesan sewa mobil?</span>
+                <span class="material-symbols-outlined accordion__icon">expand_less</span>
+              </button>
+              <div class="accordion__content" data-accordion-content>
+                <p class="accordion__text">
+                  Anda dapat melakukan pemesanan melalui WhatsApp kami atau klik tombol Pesan Sekarang di website. Pilih rute perjalanan, tanggal keberangkatan, serta jumlah penumpang, kemudian admin kami akan segera memproses konfirmasi pesanan Anda.
+                </p>
+              </div>
+            </div>
+            <div class="accordion accordion--faq" data-accordion data-accordion-group="faq">
+              <button class="accordion__trigger" aria-expanded="false" data-accordion-trigger>
+                <span>Metode pembayaran apa saja yang tersedia?</span>
+                <span class="material-symbols-outlined accordion__icon">expand_more</span>
+              </button>
+              <div class="accordion__content" data-accordion-content>
+                <p class="accordion__text">
+                  Kami menerima berbagai metode pembayaran termasuk transfer bank (BCA, Mandiri, BRI, BNI), e-wallet (GoPay, OVO, Dana), serta pembayaran tunai secara langsung kepada driver.
+                </p>
+              </div>
+            </div>
+            <div class="accordion accordion--faq" data-accordion data-accordion-group="faq">
+              <button class="accordion__trigger" aria-expanded="false" data-accordion-trigger>
+                <span>Apakah pesanan bisa dibatalkan atau dijadwal ulang?</span>
+                <span class="material-symbols-outlined accordion__icon">expand_more</span>
+              </button>
+              <div class="accordion__content" data-accordion-content>
+                <p class="accordion__text">
+                  Ya, pesanan dapat dibatalkan atau dijadwalkan ulang selambat-lambatnya 12 jam sebelum waktu keberangkatan tanpa dikenakan biaya pembatalan.
+                </p>
+              </div>
+            </div>
+            <div class="accordion accordion--faq" data-accordion data-accordion-group="faq">
+              <button class="accordion__trigger" aria-expanded="false" data-accordion-trigger>
+                <span>Apakah harga sewa sudah termasuk biaya tol?</span>
+                <span class="material-symbols-outlined accordion__icon">expand_more</span>
+              </button>
+              <div class="accordion__content" data-accordion-content>
+                <p class="accordion__text">
+                  Harga sewa standar belum termasuk biaya tol dan parkir. Namun kami menyediakan opsi paket all-in yang sudah termasuk tol, bahan bakar, serta biaya driver.
+                </p>
+              </div>
+            </div>
+            <div class="accordion accordion--faq" data-accordion data-accordion-group="faq">
+              <button class="accordion__trigger" aria-expanded="false" data-accordion-trigger>
+                <span>Fasilitas apa saja yang tersedia selama perjalanan?</span>
+                <span class="material-symbols-outlined accordion__icon">expand_more</span>
+              </button>
+              <div class="accordion__content" data-accordion-content>
+                <p class="accordion__text">
+                  Setiap kendaraan kami dilengkapi dengan AC, audio system, kursi yang nyaman, serta air mineral. Tersedia juga fasilitas tambahan seperti Wi-Fi port dan charger HP sesuai jenis kendaraan.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section section--cta" id="kontak">
+      <div class="container">
+        <div class="final-cta reveal reveal--fade-up">
+          <div class="final-cta__bg"></div>
+          <div class="final-cta__content">
+            <span class="final-cta__eyebrow reveal reveal--fade-up">PERJALANAN ANDA MENUNGGU</span>
+            <h2 class="final-cta__title reveal reveal--fade-up reveal--delay-1">Perjalanan berikutnya<br>dimulai di sini.</h2>
+            <p class="final-cta__desc reveal reveal--fade-up reveal--delay-2">Siap menikmati perjalanan yang nyaman bersama BandungWheels?</p>
+            <a href="https://wa.me/6281122334455?text=Hallo%20BandungWheels%2C%20saya%20ingin%20melakukan%20pemesanan%20sewa%20mobil.%20Mohon%20informasi%20mengenai%20armada%20dan%20ketersediaannya." class="btn btn--secondary btn--lg final-cta__btn reveal reveal--fade-up reveal--delay-3" target="_blank" rel="noopener">
+              Pesan Sekarang via WhatsApp <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <!-- Brand -->
+      <div class="footer__brand-section">
+        <div class="footer__logo">
+          <span class="material-symbols-outlined footer__logo-icon">directions_car</span>
+          <span class="footer__logo-text">BandungWheels</span>
+        </div>
+        <p class="footer__brand-desc">
+          BandungWheels merupakan perusahaan layanan sewa mobil Bandung dan rental mobil yang telah beroperasi sejak tahun 2015.
+        </p>
+      </div>
+
+      <!-- Information Grid -->
+      <div class="footer__grid">
+        <div class="footer__col">
+          <h4 class="footer__col-title">Home</h4>
+          <ul class="footer__col-links">
+            <li><a href="#tentang" class="footer__col-link">Tentang kami</a></li>
+            <li><a href="#layanan" class="footer__col-link">Layanan Reguler</a></li>
+            <li><a href="#layanan" class="footer__col-link">Paket Wisata</a></li>
+            <li><a href="#armada" class="footer__col-link">Sewa Mobil</a></li>
+            <li><a href="#faq" class="footer__col-link">Cara Pesan</a></li>
+            <li><a href="#beranda" class="footer__col-link">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Kontak Kami</h4>
+          <ul class="footer__col-links">
+            <li class="footer__col-contact">
+              <span class="material-symbols-outlined footer__col-icon">call</span>
+              0811 2233 4455
+            </li>
+            <li class="footer__col-contact">
+              <span class="material-symbols-outlined footer__col-icon">call</span>
+              0812 3344 5566
+            </li>
+            <li class="footer__col-contact">
+              <span class="material-symbols-outlined footer__col-icon">call</span>
+              0813 4455 6677
+            </li>
+            <li class="footer__col-contact">
+              <span class="material-symbols-outlined footer__col-icon">mail</span>
+              info@bandungwheels.com
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Pusat Informasi</h4>
+          <ul class="footer__col-links">
+            <li><a href="#" class="footer__col-link">Syarat &amp; Ketentuan</a></li>
+            <li><a href="#" class="footer__col-link">Kebijakan Privasi</a></li>
+            <li><a href="#" class="footer__col-link">Pengungkapan</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Alamat</h4>
+          <p class="footer__col-address">
+            Jl. Pasteur No. 15, Sukajadi, Kota Bandung, Jawa Barat 40161
+          </p>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; BandungWheels <span id="footerYear"></span>. All Right Reserved.</p>
+        <div class="footer__social">
+          <a href="https://instagram.com/bandungwheels" class="footer__social-btn" aria-label="Instagram" target="_blank" rel="noopener">
+            <span class="material-symbols-outlined">photo_camera</span>
+          </a>
+          <a href="https://tiktok.com/@bandungwheels" class="footer__social-btn" aria-label="TikTok" target="_blank" rel="noopener">
+            <span class="material-symbols-outlined">play_arrow</span>
+          </a>
+          <a href="mailto:info@bandungwheels.com" class="footer__social-btn" aria-label="Email" target="_blank" rel="noopener">
+            <span class="material-symbols-outlined">mail</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
