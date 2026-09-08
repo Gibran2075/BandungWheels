@@ -65,7 +65,6 @@
     panel.innerHTML = `
       <div class="navbar__mobile-header">
         <a href="#beranda" class="navbar__logo">
-          <span class="material-symbols-outlined navbar__logo-icon">directions_car</span>
           <span class="navbar__logo-text">BandungWheels</span>
         </a>
         <button class="navbar__mobile-close" id="mobileClose" aria-label="Tutup menu">

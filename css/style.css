@@ -293,7 +293,7 @@ h1, h2, h3, h4 {
   left: 0;
   right: 0;
   z-index: var(--z-navbar);
-  height: 80px;
+  height: 76px;
   background-color: var(--color-surface);
   transition: background-color var(--transition), box-shadow var(--transition), backdrop-filter var(--transition);
 }
@@ -318,20 +318,22 @@ h1, h2, h3, h4 {
 .navbar__logo {
   display: flex;
   align-items: center;
-  gap: var(--stack-sm);
   text-decoration: none;
   flex-shrink: 0;
 }
 
-.navbar__logo-icon {
-  font-size: 32px;
-  color: var(--color-secondary);
+.navbar__logo-text {
+  font-family: var(--font-headline);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.7px;
+  color: var(--color-primary);
+  transition: opacity 180ms ease;
 }
 
-.navbar__logo-text {
-  font: var(--text-headline-md);
-  font-weight: 700;
-  color: var(--color-primary);
+.navbar__logo:hover .navbar__logo-text {
+  opacity: 0.85;
 }
 
 /* Desktop nav */
@@ -397,7 +399,7 @@ h1, h2, h3, h4 {
   left: 0;
   min-width: 200px;
   background-color: var(--color-surface-container-lowest);
-  border-radius: var(--radius);
+  border-radius: 12px;
   box-shadow: var(--shadow-md);
   padding: var(--stack-sm) 0;
   opacity: 0;
@@ -429,11 +431,19 @@ h1, h2, h3, h4 {
 /* CTA */
 .navbar__cta {
   display: none;
-  padding: 12px 32px;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  padding: 0 28px;
   background-color: var(--color-secondary);
   color: var(--color-on-secondary);
-  border-radius: var(--radius);
-  font: var(--text-label-bold);
+  border-radius: 10px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  text-decoration: none;
   transition: background-color var(--transition), box-shadow var(--transition);
 }
 
@@ -537,6 +547,11 @@ h1, h2, h3, h4 {
   font: var(--text-label-bold);
 }
 
+/* Mobile logo size */
+.navbar__logo-text {
+  font-size: 24px;
+}
+
 /* Responsive */
 @media (min-width: 768px) {
   .container {
@@ -553,6 +568,14 @@ h1, h2, h3, h4 {
 
   .navbar__hamburger {
     display: none;
+  }
+
+  .navbar__logo-text {
+    font-size: 28px;
+  }
+
+  .navbar__container {
+    padding: 0 24px;
   }
 }
 
