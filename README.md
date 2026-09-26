@@ -1,6 +1,6 @@
 # Buroq Transport
 
-Website rental mobil premium untuk Bandung dan sekitarnya.
+Website rental mobil premium untuk Karawang dan sekitarnya.
 
 ## Overview
 
