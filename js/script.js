@@ -1,5 +1,5 @@
 /**
- * BandungWheels - Main Script
+ * Buroq Transport - Main Script
  * Modular, vanilla JavaScript
  */
 
@@ -65,7 +65,7 @@
     panel.innerHTML = `
       <div class="navbar__mobile-header">
         <a href="#beranda" class="navbar__logo">
-          <span class="navbar__logo-text">BandungWheels</span>
+          <span class="navbar__logo-text">Buroq Transport</span>
         </a>
         <button class="navbar__mobile-close" id="mobileClose" aria-label="Tutup menu">
           <span class="material-symbols-outlined">close</span>
@@ -76,7 +76,7 @@
       <a href="#layanan" class="navbar__mobile-link" data-mobile-nav>Layanan</a>
       <a href="#armada" class="navbar__mobile-link" data-mobile-nav>Armada</a>
       <a href="#kontak" class="navbar__mobile-link" data-mobile-nav>Kontak</a>
-      <a href="https://wa.me/${CONFIG.whatsappNumber}?text=Halo%20BandungWheels%2C%20saya%20ingin%20menyewa%20mobil." class="navbar__mobile-cta" target="_blank" rel="noopener">Pesan Sekarang</a>
+      <a href="https://wa.me/${CONFIG.whatsappNumber}?text=Halo%20Buroq%20Transport%2C%20saya%20ingin%20menyewa%20mobil." class="navbar__mobile-cta" target="_blank" rel="noopener">Pesan Sekarang</a>
     `;
 
     // Create overlay
@@ -179,7 +179,7 @@
     $$('a[href^="#"]').forEach(function (anchor) {
       anchor.addEventListener('click', function (e) {
         const targetId = this.getAttribute('href');
-        if (!targetId || targetId === '#') return;
+        if (!targetId || targetId === '#' || targetId.charAt(0) !== '#') return;
 
         const target = $(targetId);
         if (!target) return;
@@ -302,7 +302,7 @@
       btn.addEventListener('click', function () {
         const carName = this.getAttribute('data-car') || 'mobil';
         const message = encodeURIComponent(
-          'Hallo BandungWheels, saya tertarik menyewa ' +
+          'Hallo Buroq Transport, saya tertarik menyewa ' +
             carName +
             '. Mohon informasi ketersediaannya.'
         );
@@ -437,10 +437,10 @@
     if (cards.length === 0) return;
 
     const serviceMessages = {
-      airport: 'Hallo BandungWheels, saya tertarik dengan layanan Airport Transfer. Mohon informasi lebih lanjut mengenai paket dan ketersediaannya.',
-      wisata: 'Hallo BandungWheels, saya tertarik dengan layanan Wisata & Liburan. Mohon informasi lebih lanjut mengenai paket dan ketersediaannya.',
-      business: 'Hallo BandungWheels, saya tertarik dengan layanan Business Trip. Mohon informasi lebih lanjut mengenai paket dan ketersediaannya.',
-      family: 'Hallo BandungWheels, saya tertarik dengan layanan Family Trip. Mohon informasi lebih lanjut mengenai paket dan ketersediaannya.',
+      airport: 'Hallo Buroq Transport, saya tertarik dengan layanan Airport Transfer. Mohon informasi lebih lanjut mengenai paket dan ketersediaannya.',
+      wisata: 'Hallo Buroq Transport, saya tertarik dengan layanan Wisata & Liburan. Mohon informasi lebih lanjut mengenai paket dan ketersediaannya.',
+      business: 'Hallo Buroq Transport, saya tertarik dengan layanan Business Trip. Mohon informasi lebih lanjut mengenai paket dan ketersediaannya.',
+      family: 'Hallo Buroq Transport, saya tertarik dengan layanan Family Trip. Mohon informasi lebih lanjut mengenai paket dan ketersediaannya.',
     };
 
     cards.forEach(function (card) {
@@ -469,12 +469,17 @@
         }
       });
 
-      // WhatsApp CTA handler
+      // WhatsApp CTA - set real link so it opens WhatsApp only (no duplicate tab)
       if (waBtn) {
+        waBtn.setAttribute(
+          'href',
+          'https://wa.me/' +
+            CONFIG.whatsappNumber +
+            '?text=' +
+            encodeURIComponent(serviceMessages[serviceKey] || 'Hallo Buroq Transport, saya tertarik dengan layanan Anda.')
+        );
         waBtn.addEventListener('click', function (e) {
           e.stopPropagation();
-          var message = encodeURIComponent(serviceMessages[serviceKey] || 'Hallo BandungWheels, saya tertarik dengan layanan Anda.');
-          window.open('https://wa.me/' + CONFIG.whatsappNumber + '?text=' + message, '_blank');
         });
       }
     });

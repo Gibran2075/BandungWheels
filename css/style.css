@@ -1,5 +1,5 @@
 /* ============================================================
-   BandungWheels - Design System & Styles
+   Buroq Transport - Design System & Styles
    Based on DESIGN.md - Corporate Modern / Executive
    ============================================================ */
 
@@ -980,20 +980,25 @@ h1, h2, h3, h4 {
 
 /* Expandable Detail */
 .service-card__detail {
-  max-height: 0;
-  overflow: hidden;
+  display: grid;
+  grid-template-rows: 0fr;
   opacity: 0;
-  transition: max-height 350ms ease, opacity 300ms ease, margin-top 300ms ease, padding 300ms ease;
+  transition: grid-template-rows 350ms ease, opacity 300ms ease, margin-top 300ms ease, padding 300ms ease;
   margin-top: 0;
   padding: 0;
 }
 
 .service-card.is-expanded .service-card__detail {
-  max-height: 320px;
+  grid-template-rows: 1fr;
   opacity: 1;
   margin-top: var(--stack-md);
   padding-top: var(--stack-md);
   border-top: 1px solid rgba(196, 198, 207, 0.25);
+}
+
+.service-card__detail-inner {
+  overflow: hidden;
+  min-height: 0;
 }
 
 .service-card__detail-desc {
